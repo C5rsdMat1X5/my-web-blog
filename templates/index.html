@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matias Henriquez | About Me</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Enlace para saltar contenido (accesibilidad) -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Sección de Encabezado / Hero -->
+    <header class="hero" role="banner">
+      <img src="static/pfp.png" alt="Profile picture of Matias Henriquez" class="hero-img" />
+      <h1 class="hero-title">
+        Hi, I'm Matias! <span class="wave" aria-hidden="true">👋</span>
+      </h1>
+      <p class="hero-desc">
+        A passionate programmer, tech explorer, and lifelong learner. Welcome to my digital bio!
+      </p>
+      <nav class="hero-links" aria-label="Social Links">
+        <a
+          href="https://github.com/C5rsdMat1X5"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          GitHub
+        </a>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main id="main-content">
+      <!-- Sección de Info (About y Skills) -->
+      <section class="info-cards">
+        <article class="about card">
+          <h2>About Me</h2>
+          <ul>
+            <li><strong>Name:</strong> Matias Henriquez</li>
+            <li><strong>Country:</strong> Chile</li>
+            <li><strong>Language:</strong> Spanish, English (learning)</li>
+          </ul>
+          <div class="about-fun">
+            <h3>Fun Facts</h3>
+            <div class="fun-facts">
+              <div class="fact-card">Prefers winter over summer</div>
+              <div class="fact-card">Loves watermelon 🍉</div>
+              <div class="fact-card">Dreams of visiting Switzerland</div>
+              <div class="fact-card">Enjoys learning new programming languages</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="skills card">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill-card"><span aria-hidden="true">🐍</span> Python</div>
+            <div class="skill-card"><span aria-hidden="true">💻</span> Web Development</div>
+            <div class="skill-card"><span aria-hidden="true">⚡</span> Problem Solving</div>
+            <div class="skill-card"><span aria-hidden="true">🏀</span> Basketball</div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sección de Contenido Principal (Projects y Blog Posts) -->
+      <section class="main-content">
+        <section class="projects">
+          <h2>Recent Projects</h2>
+          <div class="projects-list">
+            <article class="project-card" aria-labelledby="project1-title">
+              <h3 id="project1-title">Personal Portfolio</h3>
+              <p>A modern, responsive website to showcase my work and interests.</p>
+            </article>
+            <article class="project-card" aria-labelledby="project2-title">
+              <h3 id="project2-title">Fun Python Scripts</h3>
+              <p>Collection of small Python projects and experiments.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="blog">
+          <h2>Blog Posts</h2>
+          <div class="blog-list">
+            <article class="blog-card" aria-labelledby="blog1-title">
+              <h3 id="blog1-title">Why I Love Coding</h3>
+              <p>Sharing my journey and what keeps me motivated to code every day.</p>
+            </article>
+            <article class="blog-card" aria-labelledby="blog2-title">
+              <h3 id="blog2-title">Why I Post My Proyects</h3>
+              <p>Because someday one of my tools could be useful for someone.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">
+        Made with <span class="heart">♥</span> by Matias Henriquez &copy; 2025
+      </p>
+    </footer>
+  </body>
+</html>
