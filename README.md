@@ -1,4 +1,4 @@
-# Matías Henríquez — Personal Portfolio
+# Matías Henríquez — Personal Bio
 
 > My online playground, interactive resume, and humble brag all rolled into one.
 
