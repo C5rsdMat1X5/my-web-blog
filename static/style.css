@@ -192,13 +192,13 @@ main {
   transition:
     box-shadow var(--transition-duration) var(--transition-easing),
     transform var(--transition-duration) var(--transition-easing);
-  max-width: 480px;
+  max-width: 100%;
   margin: auto;
 }
 
 .card {
-  min-height: 800px;
-  max-height: 800px;
+  min-height: 790px;
+  max-height: 790px;
   background: var(--card-bg);
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
@@ -437,11 +437,39 @@ footer {
   }
 
   .info-cards {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about ul {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .skills-list {
-    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: var(--spacing-lg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-md);
+  }
+
+  .card {
+    min-height: 950px;
+    max-height: 1000px;
+  }
+
+  .skill-card {
+    flex: 1 1 100%;
+    min-width: unset;
+    justify-content: center;
+    text-align: center;
   }
 
   .projects-list,
