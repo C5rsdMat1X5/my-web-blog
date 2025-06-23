@@ -34,3 +34,9 @@ Think of it as:
 - **HTML5 + CSS custom properties** give it that sleek, theme‑able vibe.  
 - **Google Fonts – Montserrat** for that clean typographic drip.  
 - Zero JS frameworks—because sometimes less _is_ more.
+
+---
+
+## 🧠 Author
+
+Developed by Matías Henríquez.
