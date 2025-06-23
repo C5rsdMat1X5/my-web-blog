@@ -21,17 +21,20 @@
     />
   </head>
   <body>
-    <!-- Enlace para saltar contenido (accesibilidad) -->
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Sección de Encabezado / Hero -->
     <header class="hero" role="banner">
-      <img src="static/pfp.png" alt="Profile picture of Matias Henriquez" class="hero-img" />
+      <img
+        src="static/pfp.png"
+        alt="Profile picture of Matias Henriquez"
+        class="hero-img"
+      />
       <h1 class="hero-title">
         Hi, I'm Matias! <span class="wave" aria-hidden="true">👋</span>
       </h1>
       <p class="hero-desc">
-        A passionate programmer, tech explorer, and lifelong learner. Welcome to my digital bio!
+        A passionate programmer, tech explorer, and lifelong learner. Welcome to
+        my digital bio!
       </p>
       <nav class="hero-links" aria-label="Social Links">
         <a
@@ -45,47 +48,119 @@
       </nav>
     </header>
 
-    <!-- Contenedor principal -->
     <main id="main-content">
-      <!-- Sección de Info (About y Skills) -->
       <section class="info-cards">
         <article class="about card">
           <h2>About Me</h2>
-          <ul>
-            <li><strong>Name:</strong> Matias Henriquez</li>
-            <li><strong>Country:</strong> Chile</li>
-            <li><strong>Language:</strong> Spanish, English (learning)</li>
+
+          <!-- Mini-bio -->
+          <p class="about-tldr">
+            I'm a full-stack developer from Chile who enjoys building practical tools and automating repetitive tasks. I’m passionate about Python, backend development, and learning by doing.
+          </p>
+
+          <!-- Stats -->
+          <ul class="about-stats">
+            <li><strong>3+ years</strong> writing code</li>
+            <li><strong>10+</strong> personal projects</li>
+            <li><strong>1000+</strong> GitHub commits</li>
           </ul>
-          <div class="about-fun">
-            <h3>Fun Facts</h3>
-            <div class="fun-facts">
-              <div class="fact-card">Prefers winter over summer</div>
-              <div class="fact-card">Loves watermelon 🍉</div>
-              <div class="fact-card">Dreams of visiting Switzerland</div>
-              <div class="fact-card">Enjoys learning new programming languages</div>
-            </div>
+
+          <!-- Favorite stack -->
+          <div class="about-stack">
+            <span>🐍 Python </span>
+            <span>⚙️ Flask </span>
+            <span>🌐 HTML/CSS </span>
+            <span>👹 JavaScript </span>
           </div>
+
+          <!-- Timeline -->
+          <h3>Milestones</h3>
+          <ul class="about-timeline">
+            <li><time>2022</time> — Started programming with Python</li>
+            <li><time>2023</time> — Built my first web app with Flask</li>
+            <li><time>2024</time> — Published multiple tools on GitHub</li>
+          </ul>
+
+          <!-- Interests -->
+          <h3>Other Interests</h3>
+          <ul class="about-hobbies">
+            <li>⛰️ Traveling</li>
+            <li>🦀 Doing weird stuff</li>
+            <li>🍉 Eating watermelon, obviously</li>
+          </ul>
         </article>
 
         <article class="skills card">
-          <h2>Skills</h2>
+          <h2 class="skills-title">Skills</h2>
           <div class="skills-list">
-            <div class="skill-card"><span aria-hidden="true">🐍</span> Python</div>
-            <div class="skill-card"><span aria-hidden="true">💻</span> Web Development</div>
-            <div class="skill-card"><span aria-hidden="true">⚡</span> Problem Solving</div>
-            <div class="skill-card"><span aria-hidden="true">🏀</span> Basketball</div>
+            <div class="skill-card"
+              ><span aria-hidden="true">🐍</span> Python</div
+            >
+            <div class="skill-card"
+              ><span aria-hidden="true">💻</span> Web Development</div
+            >
+            <div class="skill-card"
+              ><span aria-hidden="true">⚡</span> Problem Solving</div
+            >
+            <div class="skill-card"
+              ><span aria-hidden="true">🏀</span> Basketball</div
+            >
+          </div>
+          <h2>Proyects and websites</h2>
+          <div class="skills-list">
+            <a
+              href="https://github.com/C5rsdMat1X5/voice-assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="skill-card"
+            >
+              <span aria-hidden="true">🗣️</span>
+              Voice Assistant
+            </a>
+          
+            <a
+              href="https://github.com/C5rsdMat1X5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="skill-card"
+            >
+              <span aria-hidden="true">💻</span>
+              Calculator Web
+            </a>
+          
+            <a
+              href="https://github.com/C5rsdMat1X5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="skill-card"
+            >
+              <span aria-hidden="true">📝</span>
+              To-do app
+            </a>
+          
+            <a
+              href="https://github.com/C5rsdMat1X5/password-manager-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="skill-card"
+            >
+              <span aria-hidden="true">🔐</span>
+              Password-Manager
+            </a>
           </div>
         </article>
       </section>
 
-      <!-- Sección de Contenido Principal (Projects y Blog Posts) -->
       <section class="main-content">
         <section class="projects">
           <h2>Recent Projects</h2>
           <div class="projects-list">
             <article class="project-card" aria-labelledby="project1-title">
               <h3 id="project1-title">Personal Portfolio</h3>
-              <p>A modern, responsive website to showcase my work and interests.</p>
+              <p
+                >A modern, responsive website to showcase my work and
+                interests.</p
+              >
             </article>
             <article class="project-card" aria-labelledby="project2-title">
               <h3 id="project2-title">Fun Python Scripts</h3>
@@ -99,11 +174,16 @@
           <div class="blog-list">
             <article class="blog-card" aria-labelledby="blog1-title">
               <h3 id="blog1-title">Why I Love Coding</h3>
-              <p>Sharing my journey and what keeps me motivated to code every day.</p>
+              <p
+                >Sharing my journey and what keeps me motivated to code every
+                day.</p
+              >
             </article>
             <article class="blog-card" aria-labelledby="blog2-title">
               <h3 id="blog2-title">Why I Post My Proyects</h3>
-              <p>Because someday one of my tools could be useful for someone.</p>
+              <p
+                >Because someday one of my tools could be useful for someone.</p
+              >
             </article>
           </div>
         </section>
